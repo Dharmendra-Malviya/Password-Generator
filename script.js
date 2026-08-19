@@ -34,7 +34,6 @@ function handleSlider(){ //display the password length on the webpage
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
-    //shadow - Homework
     indicator.style.boxShadow = '0px 0px 12px 1px ${color}'
 
 }
@@ -92,7 +91,6 @@ async function copyContent(){
     catch(e) {
         copyMsg.innerText = "Failed";
     }
-    //to make copy wala span visible
     copyMsg.classList.add("active");
 
     setTimeout(() => {
@@ -106,7 +104,6 @@ async function copyContent(){
 
 function shufflePassword(array){
     for(let i = array.length - 1; i > 0; i--){
-        // finding random j using random function
         const j = Math.floor(Math.random() * (i+1));
         [array[i], array[j]] = [array[j], array[i]]; // swap
     }
@@ -147,7 +144,7 @@ copyBtn.addEventListener('click', () => {
 
 
 generateBtn.addEventListener('click', () =>{
-    // none of the check boxes rae selected
+    // none of the check boxes are selected
     if(checkCount <=0) 
        return;
 
@@ -163,25 +160,6 @@ generateBtn.addEventListener('click', () =>{
     // remove old password
     password = "";
 
-
-
-    //let's put the stuff mentioned by checkboxes
-
-    // if(uppercaseCheck.checked){
-    //     password += generateUpperCase();
-    // }
-
-    // if(lowercaseCheck.checked){
-    //     password += generateLowerCase();
-    // }
-
-    // if(numbersCheck.checked){
-    //     password += generateRandomNumber();
-    // }
-
-    // if(symbolsCheck.checked){
-    //     password += generateSymbol();
-    // }
 
     let funcArr = [];
 
