@@ -34,7 +34,7 @@ function handleSlider(){ //display the password length on the webpage
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
-    indicator.style.boxShadow = '0px 0px 12px 1px ${color}'
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 
 }
 
